@@ -41,7 +41,6 @@ def find_matching_RAMS_headfile(H5FILE):
         print('found a header file: ',converted_string)
     return converted_string
 
-# PJM added read_head from RAMS_Post_Process (https://github.com/CSU-INCUS/RAMS_Post_Process)
 def read_head(headfile,h5file):
     
     # Function that reads header files from RAMS
@@ -142,7 +141,7 @@ def read_variable(filepath,variable,model_type,output_height=False,interpolate=F
     Cp=1004.
     Rd=287.0
     p00 = 100000.0
-    #print('variable: ',variable)
+    
     if model_type=='RAMS':
         #print('RAMS file: ',filepath)
         
